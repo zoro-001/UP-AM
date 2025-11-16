@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Service | UP-AM</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">
+                <img src="logo.jpg" alt="UP-AM Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="booking.html" class="btn-nav active">Book Now</a></li>
+            </ul>
+            <div class="hamburger">&#9776;</div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header container booking-header">
+            <h1>Book Your Service</h1>
+            <p>Fill out the form below and we'll get in touch to confirm your appointment.</p>
+        </section>
+
+        <section class="booking-form-section reveal">
+            <div class="container">
+                <div class="booking-image">
+                    <img src="https://plus.unsplash.com/premium_photo-1661549775842-878460782990?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Person scheduling a service on a laptop">
+                </div>
+                <div class="booking-form-wrapper">
+                    <form id="service-form" class="booking-form">
+                        <div id="form-message"></div>
+
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Select Service</label>
+                            <select id="service" name="service" required>
+                                <option value="">--Please choose a service--</option>
+                                <option value="cleaning">House Cleaning</option>
+                                <option value="deep-cleaning">Deep Cleaning</option>
+                                <option value="regular-cleaning">Regular Cleaning</option>
+                                <option value="move-cleaning">Move-In/Out Cleaning</option>
+                                <option value="plumbing">Plumbing</option>
+                                <option value="electrician">Electrician</option>
+                                <option value="carpenter">Carpenter</option>
+                                <option value="gardening">Gardening</option>
+                                <option value="repair">Appliance Repair</option>
+                                <option value="painting">Painting</option>
+                                <option value="handyman">Handyman Services</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="date">Preferred Date</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="address">Address</label>
+                            <textarea id="address" name="address" rows="4" placeholder="Street, City, Postal Code" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="details">Additional Details (Optional)</label>
+                            <textarea id="details" name="details" rows="4" placeholder="Tell us more about your needs..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">Submit Request</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 UP-AM. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
